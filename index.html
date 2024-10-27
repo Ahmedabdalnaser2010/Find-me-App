@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+  crossorigin=""/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./master.css">
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h2>Location Tracker</h2>
+      
+     <div class="input">
+      <input class="in" type="text" placeholder="Search for any IP address or domain" autofocus>
+      <img src="./images/icon-arrow.svg" alt="icon-arrow" class="arrow">
+      <i class="fa-solid fa-location-crosshairs locate-me"></i>
+      <i class="fa-solid fa-cloud weather"></i>
+
+     </div>
+    </div>
+    <div id="map" class="map"></div>
+    <div class="info">
+      <div class="ip">
+        <p>IP Address</p>
+        <h4></h4>
+      </div>
+      <div class="location">
+        <p>Location</p>
+        <h4></h4>
+      </div>
+      <div class="time-zone">
+        <p>Timezone</p>
+        <h4></h4>
+      </div>
+      <div class="ISP">
+        <p>ISP</p>
+        <h4></h4>
+      </div>
+    </div>
+    <!-- locate me -->
+    <div class="location-info">
+      <div class="late">
+        <p>Latitude</p>
+        <h4></h4>
+      </div>
+      <div class="long">
+        <p>longitude</p>
+        <h4></h4>
+      </div>
+      <div class="loc">
+        <p>location</p>
+        <h4></h4>
+      </div>
+     </div>
+     <!-- weather -->
+      <div class="weather-condition">
+
+        <div class="day one">
+          <span class="day-date"></span>
+          <img src="" class="icon" alt="">
+          <span class="temp"></span>
+        </div>
+        <div class="day two">
+          <span class="day-date"></span>
+          <img src="" class="icon" alt="">
+          <span class="temp"></span>
+        </div>
+        <div class="day three">
+          <span class="day-date"></span>
+          <img src="" class="icon" alt="">
+          <span class="temp"></span>
+        </div>
+      </div>
+
+  </div>
+
+  
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin=""></script>
+  <script src="./main.js"></script>
+ 
+</body>
+</html>
