@@ -154,18 +154,22 @@ async function getWeather(cityName) {
         console.log("error")
     }
 
-} let locationInfo = document.querySelector(".location-info")
+}
+let locationInfo = document.querySelector(".location-info")
+let info = document.querySelector(".info")
 
 document.addEventListener("click", function (e) {
 
     if (e.target.classList.contains("weather")) {
         weatherConditionSection.style.display = "flex"
         locationInfo.style.opacity = 0.7
+        info.style.opacity = 0.7
     }
 
     if (!e.target.classList.contains("weather")) {
         weatherConditionSection.style.display = "none"
         locationInfo.style.opacity = 0.9
+        info.style.opacity = 0.9
 
     }
 

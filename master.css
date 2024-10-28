@@ -198,12 +198,13 @@ body {
         top: calc(40vh - 200px);
         justify-content: space-between;
         top: 20%;
+        opacity: 0.85;
     }
 
     .container .location-info {
         height: 220px;
         top: calc(40vh - 140px);
-        opacity: 0.9;
+
     }
 
     .container .info div,
